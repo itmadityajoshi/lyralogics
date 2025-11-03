@@ -10,7 +10,8 @@ const Navbar = ({ theme, setTheme }) => {
     setIsOPen(!isOPen)
   }
   return (
-      <nav className="bg-purple-200">
+      <nav className="bg-purple-200  w-full">
+      
         <div className="h-16 flex items-center justify-around">
             {/* logo */}
             <div>
@@ -18,7 +19,7 @@ const Navbar = ({ theme, setTheme }) => {
             </div>
 
             {/* Desktop Buttons */}
-            <div className="hidden sm:block space-x-4 text-2xl ">
+            <div className="hidden sm:block space-x-4 text-2xl  ">
               <a href="">Home</a>
               <a href="">service</a>
               <a href="">About</a>
@@ -30,7 +31,7 @@ const Navbar = ({ theme, setTheme }) => {
         </div>
 
           {/* Mobile buttons */}
-            <div className={`${isOPen ? "block" : "hidden"}  sm:hidden bg-gray-100  flex flex-col space-y-6 items-center text-2xl`}>
+            <div className={`${isOPen ? "block" : "hidden"} absolute w-full sm:hidden bg-gray-100  flex flex-col space-y-6 items-center text-2xl overflow-hidden`}>
               <a href="">Home</a>
               <a href="">service</a>
               <a href="">About</a>
