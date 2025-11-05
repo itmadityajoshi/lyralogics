@@ -3,14 +3,17 @@ import React from "react";
 const Cards = () => {
   return (
     <>
+   
+
+   
       <div className=" mx-auto grid grid-cols-4 gap-6  m-6  ">
         {/* card */}
         <div className="group relative overflow-hidden rounded-xl cursor-pointer">
           <div className="  ">
             <img
-              src="https://images.unsplash.com/photo-1761305135198-26750cc0692c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=663"
+              src="https://images.prismic.io//intuzwebsite/98aa86da-c129-4fe0-b3fb-18adab450fde_Main.png?w=1200&q=75&auto=format,compress&fm=png8"
               alt=""
-              className=" group-hover:scale-125 duration-1000 object-cover w-full h-full"
+              className=" group-hover:scale-125 duration-1000 object-cover w-full h-100"
             />
           </div>
 
