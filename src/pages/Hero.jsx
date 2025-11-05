@@ -2,100 +2,63 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div>
-      <article class="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg">
+    <div className="carousel h-full w-full">
+      <div id="slide1" className="carousel-item relative  h-full  w-full">
         <img
-          alt=""
-          src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80"
-          class="h-56 w-full object-cover"
+          src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
+          className="w-full h-full "
         />
-        <div class="bg-white p-4 sm:p-6">
-          {" "}
-          <time datetime="2022-10-10" class="block text-xs text-gray-500">
-            {" "}
-            10th Oct 2022{" "}
-          </time>{" "}
-          <a href="#">
-            {" "}
-            <h3 class="mt-0.5 text-lg text-gray-900">
-              {" "}
-              How to position your furniture for positivity{" "}
-            </h3>{" "}
-          </a>{" "}
-          <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-            {" "}
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-            dolores, possimus pariatur animi temporibus nesciunt praesentium
-            dolore sed nulla ipsum eveniet corporis quidem, mollitia itaque
-            minus soluta, voluptates neque explicabo tempora nisi culpa eius
-            atque dignissimos. Molestias explicabo corporis voluptatem?{" "}
-          </p>{" "}
+        <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide4" className="btn btn-circle">
+            ❮
+          </a>
+          <a href="#slide2" className="btn btn-circle">
+            ❯
+          </a>
         </div>
-      </article>
-
-
-
-      <article class="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg">
+      </div>
+      <div id="slide2" className="carousel-item relative w-full">
         <img
-          alt=""
-          src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80"
-          class="h-56 w-full object-cover"
+          src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+          className="w-full"
         />
-        <div class="bg-white p-4 sm:p-6">
-          {" "}
-          <time datetime="2022-10-10" class="block text-xs text-gray-500">
-            {" "}
-            10th Oct 2022{" "}
-          </time>{" "}
-          <a href="#">
-            {" "}
-            <h3 class="mt-0.5 text-lg text-gray-900">
-              {" "}
-              How to position your furniture for positivity{" "}
-            </h3>{" "}
-          </a>{" "}
-          <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-            {" "}
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-            dolores, possimus pariatur animi temporibus nesciunt praesentium
-            dolore sed nulla ipsum eveniet corporis quidem, mollitia itaque
-            minus soluta, voluptates neque explicabo tempora nisi culpa eius
-            atque dignissimos. Molestias explicabo corporis voluptatem?{" "}
-          </p>{" "}
+        <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide1" className="btn btn-circle">
+            ❮
+          </a>
+          <a href="#slide3" className="btn btn-circle">
+            ❯
+          </a>
         </div>
-      </article>
-
-
-
-      <article class="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg">
+      </div>
+      <div id="slide3" className="carousel-item relative w-full">
         <img
-          alt=""
-          src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80"
-          class="h-56 w-full object-cover"
+          src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+          className="w-full"
         />
-        <div class="bg-white p-4 sm:p-6">
-          {" "}
-          <time datetime="2022-10-10" class="block text-xs text-gray-500">
-            {" "}
-            10th Oct 2022{" "}
-          </time>{" "}
-          <a href="#">
-            {" "}
-            <h3 class="mt-0.5 text-lg text-gray-900">
-              {" "}
-              How to position your furniture for positivity{" "}
-            </h3>{" "}
-          </a>{" "}
-          <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-            {" "}
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-            dolores, possimus pariatur animi temporibus nesciunt praesentium
-            dolore sed nulla ipsum eveniet corporis quidem, mollitia itaque
-            minus soluta, voluptates neque explicabo tempora nisi culpa eius
-            atque dignissimos. Molestias explicabo corporis voluptatem?{" "}
-          </p>{" "}
+        <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide2" className="btn btn-circle">
+            ❮
+          </a>
+          <a href="#slide4" className="btn btn-circle">
+            ❯
+          </a>
         </div>
-      </article>
+      </div>
+      <div id="slide4" className="carousel-item relative w-full">
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+          className="w-full"
+        />
+        <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide3" className="btn btn-circle">
+            ❮
+          </a>
+          <a href="#slide1" className="btn btn-circle">
+            ❯
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
